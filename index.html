@@ -5,18 +5,68 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>신혜원 포트폴리오 | UI/UX Designer</title>
 <style>
-  html, body { margin: 0; height: 100%; background: #20242f; }
-  iframe { display: block; width: 100%; height: 100%; border: 0; }
+  html, body { margin: 0; height: 100%; background: #20242f; font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif; }
+  #viewer { display: block; width: 100%; height: 100%; border: 0; }
+  #pages { display: none; }
+  body.mobile #viewer { display: none; }
+  body.mobile #pages { display: block; }
+  .bar { position: sticky; top: 0; z-index: 1; display: flex; justify-content: space-between; align-items: center;
+         gap: 12px; padding: 10px 16px; background: #20242f; color: #fff; font-size: 14px; }
+  .bar a { flex: none; padding: 8px 14px; border-radius: 8px; background: #fff; color: #20242f; font-weight: 600; text-decoration: none; }
+  #pages img { display: block; width: 100%; height: auto; }
 </style>
-<script>
-  // 모바일(터치 기기)이나 PDF 내장 뷰어가 없는 브라우저는 iframe 안에서 PDF가 잘려 보이므로
-  // PDF 파일로 바로 이동해 기기 기본 뷰어로 열리게 한다
-  var pdf = 'UIUX%EB%94%94%EC%9E%90%EC%9D%B8%28%EA%B8%80%EB%A1%9C%EB%B2%8C%29_%EC%8B%A0%ED%98%9C%EC%9B%90_%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4.pdf';
-  var touch = window.matchMedia('(pointer: coarse)').matches || /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-  if (touch || navigator.pdfViewerEnabled === false) location.replace(pdf);
-</script>
 </head>
 <body>
-<iframe src="UIUX%EB%94%94%EC%9E%90%EC%9D%B8%28%EA%B8%80%EB%A1%9C%EB%B2%8C%29_%EC%8B%A0%ED%98%9C%EC%9B%90_%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4.pdf#view=FitH" title="신혜원 포트폴리오"></iframe>
+<iframe id="viewer" title="신혜원 포트폴리오"></iframe>
+<main id="pages">
+  <div class="bar"><span>신혜원 포트폴리오</span><a href="UIUX%EB%94%94%EC%9E%90%EC%9D%B8%28%EA%B8%80%EB%A1%9C%EB%B2%8C%29_%EC%8B%A0%ED%98%9C%EC%9B%90_%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4.pdf" download="UIUX디자인(글로벌)_신혜원_포트폴리오.pdf">PDF 다운로드</a></div>
+  <img src="pages/p-01.jpg" alt="포트폴리오 1페이지" width="1600" height="900">
+  <img src="pages/p-02.jpg" alt="포트폴리오 2페이지" width="1600" height="900">
+  <img src="pages/p-03.jpg" alt="포트폴리오 3페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-04.jpg" alt="포트폴리오 4페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-05.jpg" alt="포트폴리오 5페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-06.jpg" alt="포트폴리오 6페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-07.jpg" alt="포트폴리오 7페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-08.jpg" alt="포트폴리오 8페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-09.jpg" alt="포트폴리오 9페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-10.jpg" alt="포트폴리오 10페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-11.jpg" alt="포트폴리오 11페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-12.jpg" alt="포트폴리오 12페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-13.jpg" alt="포트폴리오 13페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-14.jpg" alt="포트폴리오 14페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-15.jpg" alt="포트폴리오 15페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-16.jpg" alt="포트폴리오 16페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-17.jpg" alt="포트폴리오 17페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-18.jpg" alt="포트폴리오 18페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-19.jpg" alt="포트폴리오 19페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-20.jpg" alt="포트폴리오 20페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-21.jpg" alt="포트폴리오 21페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-22.jpg" alt="포트폴리오 22페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-23.jpg" alt="포트폴리오 23페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-24.jpg" alt="포트폴리오 24페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-25.jpg" alt="포트폴리오 25페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-26.jpg" alt="포트폴리오 26페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-27.jpg" alt="포트폴리오 27페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-28.jpg" alt="포트폴리오 28페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-29.jpg" alt="포트폴리오 29페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-30.jpg" alt="포트폴리오 30페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-31.jpg" alt="포트폴리오 31페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-32.jpg" alt="포트폴리오 32페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-33.jpg" alt="포트폴리오 33페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-34.jpg" alt="포트폴리오 34페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-35.jpg" alt="포트폴리오 35페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-36.jpg" alt="포트폴리오 36페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-37.jpg" alt="포트폴리오 37페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-38.jpg" alt="포트폴리오 38페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-39.jpg" alt="포트폴리오 39페이지" width="1600" height="900" loading="lazy">
+  <img src="pages/p-40.jpg" alt="포트폴리오 40페이지" width="1600" height="900" loading="lazy">
+</main>
+<script>
+  // 모바일(터치 기기)이나 PDF 내장 뷰어가 없는 브라우저는 iframe 속 PDF가 잘리거나 다운로드되므로
+  // 페이지 이미지를 화면 폭에 맞춰 보여준다. 데스크톱은 기본 PDF 뷰어로 연다.
+  var touch = matchMedia('(pointer: coarse)').matches || /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  if (touch || navigator.pdfViewerEnabled === false) document.body.classList.add('mobile');
+  else document.getElementById('viewer').src = 'UIUX%EB%94%94%EC%9E%90%EC%9D%B8%28%EA%B8%80%EB%A1%9C%EB%B2%8C%29_%EC%8B%A0%ED%98%9C%EC%9B%90_%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4.pdf#view=FitH';
+</script>
 </body>
 </html>
