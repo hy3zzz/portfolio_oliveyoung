@@ -3,10 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>신혜원 포트폴리오</title>
-<meta http-equiv="refresh" content="0; url=portfolio.pdf">
+<title>신혜원 포트폴리오 | UI/UX Designer</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #20242f; }
+  iframe { display: block; width: 100%; height: 100%; border: 0; }
+</style>
+<script>
+  // PDF 내장 뷰어가 없는 브라우저(일부 모바일)는 PDF로 바로 이동
+  if (navigator.pdfViewerEnabled === false) location.replace('portfolio.pdf');
+</script>
 </head>
 <body>
-<p><a href="portfolio.pdf">포트폴리오 PDF 열기</a></p>
+<iframe src="portfolio.pdf#view=FitH" title="신혜원 포트폴리오"></iframe>
 </body>
 </html>
